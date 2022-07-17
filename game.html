@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                height: 70vh;
+                align-items: center;
+                width: 100%;
+            }
+
+            #main{
+                background-color: rgb(88, 88, 216);
+                color: white;
+                width: 60%;
+                height: 60vh;
+                padding: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                border: 10px double purple;
+            }
+
+            .win {
+                animation:blinking 5.5s infinite;
+                font-size: 20px;
+            }
+            
+            @keyframes blinking{
+                0%{   color: green;   }
+                47%{   color: #9FD603; }
+                62%{   color: transparent; }
+                97%{   color:transparent; }
+               100%{  color: #000;   }
+                 0%{   color: green;   }
+                47%{   color: #9FD603; }
+                62%{   color: transparent; }
+                97%{   color:transparent; }
+               100%{  color: #000;   }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="main">
+            <h2>HEY GUESS ANY NUMBER</h2>
+            <p id="text">ENTER A NUMBER BETWEEN 1 AND 50</p>
+            <input type="text" id="input" />
+            <button id="btn">submit</button>
+            <button id="btn1">playagain</button>
+        </div>
+
+        <script type="text/javascript" src="virtual.js"></script>
+    </body>
+</html>
